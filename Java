@@ -1,20 +1,11 @@
-import java.util.Scanner;
+let numero1 = prompt("Digite o primeiro número:");
+let numero2 = prompt("Digite o segundo número:");
 
-    public class App {
-        public static void main(String[] args) {
+numero1 = parseFloat(numero1);
+numero2 = parseFloat(numero2);
 
-            Scanner scanner = new Scanner(System.in);
-    
-            System.out.print("Digite o primeiro número: ");
-            double numero1 = scanner.nextDouble();
-    
-            System.out.print("Digite o segundo número: ");
-            double numero2 = scanner.nextDouble();
-    
-            double soma = numero1 + numero2;
+let soma = numero1 + numero2;
 
-            System.out.println("A soma de " + numero1 + " e " + numero2 + " é: " + soma);
-    
-            scanner.close();
-        }
-    }
+console.log("A soma de " + numero1 + " e " + numero2 + " é: " + soma);
+
+document.write("A soma de " + numero1 + " e " + numero2 + " é: " + soma);

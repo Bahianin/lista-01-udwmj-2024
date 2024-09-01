@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv1</title>
+</head>
+<body>
+    <h1>
+<?php 
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $desejoCliente = htmlspecialchars($_POST["desejo"]);
+        
+        echo "<p>Atendente: Você deseja " . $desejoCliente . ". Estamos processando sua solicitação.</p>";
+    } else {
+        echo '
+        <form method="post" action="">
+            <label for="desejo">Atendente: O que você deseja?</label><br>
+            <input type="text" id="desejo" name="desejo" required><br><br>
+            <input type="submit" value="Enviar">
+        </form>';
+    }
+?>
+    </h1>
+    <p>Atv1</p>
+</body>
+</html>
